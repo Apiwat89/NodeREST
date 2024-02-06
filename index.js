@@ -1,5 +1,5 @@
 const express = require(`express`);
-const Sequelize = require(`sqeuelize`);
+const Sequelize = require(`sequelize`);
 const app = express();
 
 app.use(express.json());
@@ -7,7 +7,7 @@ app.use(express.json());
 const sequelize = new Sequelize('database', 'username', 'passwored', {
     host: 'locahost',
     dialect: 'sqlite',
-    atorage: './Database/SQBooks.sqlite'
+    storage: './Database/SQBooks.sqlite'
 });
 
 const Book = sequelize.define('book', {
@@ -89,4 +89,4 @@ app.delete('/books/:id', (req,res) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+app.listen(port, () => console.log(`Listening on port http://localhost:${port}`));
