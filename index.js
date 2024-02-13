@@ -8,7 +8,7 @@ const sequelize = new Sequelize('database', 'username', 'passwored', {
     host: 'locahost',
     dialect: 'sqlite',
     storage: './Database/SQBooks.sqlite'
-});
+}); // test
 
 const Book = sequelize.define('book', {
     id: {
