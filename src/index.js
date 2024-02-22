@@ -8,6 +8,6 @@ app.get("/",(req,res) => {
     res.send("Hello World! Tsting NodeMOn");
 });
 
-app.listen(post, () => {
+app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 })
